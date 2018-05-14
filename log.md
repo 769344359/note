@@ -8,3 +8,5 @@ https://blog.csdn.net/zongcai249/article/details/16357119
 
 
 https://blog.jcole.us/2013/01/10/btree-index-structures-in-innodb/
+
+https://dev.mysql.com/doc/internals/en/binary-log-versions.html
