@@ -12,3 +12,5 @@ https://blog.jcole.us/2013/01/10/btree-index-structures-in-innodb/
 https://dev.mysql.com/doc/internals/en/binary-log-versions.html
 
 https://dev.mysql.com/doc/internals/en/event-structure.html
+
+http://tengine.taobao.org/book/chapter_02.html#id1
