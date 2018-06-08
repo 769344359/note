@@ -31,3 +31,6 @@ https://www.cnblogs.com/gaojian/p/3169560.html
 
 
 https://blog.csdn.net/esion23011/article/details/24057633
+
+
+https://www.w3.org/Protocols/rfc2616/rfc2616-sec5.html
