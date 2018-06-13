@@ -40,3 +40,5 @@ https://www.w3.org/Protocols/rfc2616/rfc2616-sec5.html
 [nginx正则树](http://blog.chinaunix.net/uid-27767798-id-3759557.html)  
 
 [rfc 2616](https://www.w3.org/Protocols/rfc2616/rfc2616.html)
+
+[nginx 阶段](https://blog.csdn.net/yankai0219/article/details/8220695)
