@@ -1,8 +1,11 @@
-File descriptors provide a primitive, low-level interface to input and output operations.
+  File descriptors provide a primitive, low-level interface to input and output operations.
 Both file descriptors and streams can represent a connection to a device (such as a terminal),
 or a pipe or socket for communicating with another process, as well as a normal file. But,
 if you want to do control operations that are specific to a particular kind of device, you
 must use a file descriptor; there are no facilities to use streams in this way. You must also
 use file descriptors if your program needs to do input or output in special modes, such as
 nonblocking (or polled) input (see Section 13.15 [File Status Flags], page 384).
-
+   Streams provide a higher-level interface, layered on top of the primitive file descriptor
+facilities. The stream interface treats all kinds of files pretty much alike—the sole exception
+being the three styles of buffering that you can choose (see Section 12.20 [Stream Buffering],
+page 325).
