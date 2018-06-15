@@ -3,3 +3,6 @@ Both file descriptors and streams can represent a connection to a device (such a
 or a pipe or socket for communicating with another process, as well as a normal file. But,
 if you want to do control operations that are specific to a particular kind of device, you
 must use a file descriptor; there are no facilities to use streams in this way. You must also
+use file descriptors if your program needs to do input or output in special modes, such as
+nonblocking (or polled) input (see Section 13.15 [File Status Flags], page 384).
+
