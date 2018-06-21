@@ -26,3 +26,10 @@ struct address_space {
 	errseq_t		wb_err;
 } __attribute__((aligned(sizeof(long)))) __randomize_layout;
 ```
+
+现在还有的疑问  
+1 file   
+2 页表  
+3 inode   
+4 page   
+这四个的关系是怎么样的
