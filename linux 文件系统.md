@@ -33,3 +33,12 @@ struct address_space {
 3 inode   
 4 page   
 这四个的关系是怎么样的
+
+---
+我现在知道的是
+vfs 是一层抽象层
+FILE * 是一个流,有缓冲,是用户态fd 的跟加深的封装
+fd  是进程的用户层的表示,可以通过fd 获取file
+file 属于进程
+inode 属于文件  
+页表是用来使虚拟地址映射到相应的物理页  
