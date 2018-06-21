@@ -42,3 +42,4 @@ fd  是进程的用户层的表示,可以通过fd 获取file
 file 属于进程  
 inode 属于文件    
 页表是用来使虚拟地址映射到相应的物理页    
+adress_space 貌似是 inode(文件系统)  和 page(物理内存) 两者的映射  
