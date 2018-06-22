@@ -43,3 +43,17 @@ file 属于进程
 inode 属于文件    
 页表是用来使虚拟地址映射到相应的物理页    
 adress_space 貌似是 inode(文件系统)  和 page(物理内存) 两者的映射  
+
+
+--- 
+ext2 文件系统
+
+writepages 函数 其实是默认的写回例程
+```
+static int
+ext2_writepages(struct address_space *mapping, struct writeback_control *wbc)
+{
+
+	return mpage_writepages(mapping, wbc, ext2_get_block);
+}
+```
