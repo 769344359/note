@@ -49,3 +49,5 @@ http://www.cnblogs.com/kappia/archive/2013/04/27/linux_kernel_submit_bio_probe.h
 
 
 https://blog.csdn.net/droidphone/article/details/8074892
+
+https://blog.csdn.net/DroidPhone/article/details/8104433
