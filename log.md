@@ -57,3 +57,5 @@ https://cn.bing.com/search?q=vsyscall&go=%E6%8F%90%E4%BA%A4&qs=n&form=QBLHCN&sp=
 https://cn.bing.com/search?q=gettimeofday+php&qs=n&form=QBRE&sp=-1&pq=undefined&sc=0-16&sk=&cvid=34B0B40306BD4E819A2003E8D89B9BDB
 
 https://stackoverflow.com/questions/19938324/what-are-vdso-and-vsyscall
+
+https://golangcaff.com/topics/115/using-the-go-language-to-handle-1-million-requests-per-minute
