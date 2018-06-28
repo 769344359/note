@@ -46,3 +46,6 @@ https://www.w3.org/Protocols/rfc2616/rfc2616-sec5.html
 http://www.laruence.com/2013/08/14/2899.html
 
 http://www.cnblogs.com/kappia/archive/2013/04/27/linux_kernel_submit_bio_probe.html
+
+
+https://blog.csdn.net/droidphone/article/details/8074892
