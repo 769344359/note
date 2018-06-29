@@ -59,3 +59,5 @@ https://cn.bing.com/search?q=gettimeofday+php&qs=n&form=QBRE&sp=-1&pq=undefined&
 https://stackoverflow.com/questions/19938324/what-are-vdso-and-vsyscall
 
 https://golangcaff.com/topics/115/using-the-go-language-to-handle-1-million-requests-per-minute
+
+http://www.cnblogs.com/stonehat/p/8613505.html
