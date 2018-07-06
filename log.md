@@ -66,3 +66,5 @@ http://www.cnblogs.com/stonehat/p/8613505.html
 http://www.laruence.com/2010/05/04/1450.html
 
 https://www.cnblogs.com/papertree/p/7159802.html
+
+http://cenalulu.github.io/linux/numa/
