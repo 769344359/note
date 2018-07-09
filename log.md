@@ -70,3 +70,5 @@ https://www.cnblogs.com/papertree/p/7159802.html
 http://cenalulu.github.io/linux/numa/
 
 https://www.ibm.com/developerworks/cn/linux/l-numa/index.html
+
+https://tools.ietf.org/html/rfc6454
