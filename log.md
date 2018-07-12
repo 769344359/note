@@ -77,3 +77,5 @@ https://dev.mysql.com/doc/refman/5.7/en/information-schema.html
 
 [linux io 层级](https://blog.csdn.net/guogaofeng1219/article/details/5411821)
 
+[bio 相关](http://www.udpwork.com/item/8437.html)
+
