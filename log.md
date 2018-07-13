@@ -80,3 +80,5 @@ https://dev.mysql.com/doc/refman/5.7/en/information-schema.html
 [bio 相关](http://www.udpwork.com/item/8437.html)
 
 [bio 系列一定要读](https://blog.csdn.net/fudan_abc/article/details/2034264)
+
+[php 异常](https://novnan.github.io/PHP/throwable-exceptions-and-errors-in-php7/)
