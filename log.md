@@ -84,3 +84,5 @@ https://dev.mysql.com/doc/refman/5.7/en/information-schema.html
 [php 异常](https://novnan.github.io/PHP/throwable-exceptions-and-errors-in-php7/)
 
 [plan9 汇编](https://gocn.vip/article/733)
+
+[plan9 汇编相关说明文档](https://9p.io/sys/doc/asm.html)
