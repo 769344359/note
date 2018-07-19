@@ -86,3 +86,5 @@ https://dev.mysql.com/doc/refman/5.7/en/information-schema.html
 [plan9 汇编](https://gocn.vip/article/733)
 
 [plan9 汇编相关说明文档](https://9p.io/sys/doc/asm.html)
+
+[semi join](https://mariadb.com/kb/en/library/semi-join-subquery-optimizations/)
