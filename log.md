@@ -90,3 +90,5 @@ https://dev.mysql.com/doc/refman/5.7/en/information-schema.html
 [semi join](https://mariadb.com/kb/en/library/semi-join-subquery-optimizations/)
 
 If eval() is the answer, you're almost certainly asking the wrong question. -- Rasmus Lerdorf, BDFL of PHP
+
+https://github.com/golang/go/commit/f78dc1dac1890ff58c6c82b1097620bf171ec149
