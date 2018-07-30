@@ -92,3 +92,5 @@ https://dev.mysql.com/doc/refman/5.7/en/information-schema.html
 If eval() is the answer, you're almost certainly asking the wrong question. -- Rasmus Lerdorf, BDFL of PHP
 
 https://github.com/golang/go/commit/f78dc1dac1890ff58c6c82b1097620bf171ec149
+
+https://blog.csdn.net/joker0910/article/details/7655606   elf 加载
