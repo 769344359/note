@@ -96,3 +96,6 @@ https://github.com/golang/go/commit/f78dc1dac1890ff58c6c82b1097620bf171ec149
 https://blog.csdn.net/joker0910/article/details/7655606   elf 加载
 
 http://cxsmarkchan.com/articles/linux-execve.html  elf 加载相关 execute
+
+
+http://www.cnblogs.com/mingziday/p/3969274.html   linux radix tree
