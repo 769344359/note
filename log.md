@@ -102,3 +102,4 @@ http://www.cnblogs.com/mingziday/p/3969274.html   linux radix tree
 
 http://www.cnblogs.com/gaozhengwei/p/7099843.html   tcp/ip 协议调用链路
 http://blog.163.com/li_hx/blog/static/183991413201322982935548/  postgre 谓词
+https://zhiwei.li/text/2012/03/12/postgres%E7%9A%84join%E6%93%8D%E4%BD%9C/  postgre join 隐式连接
