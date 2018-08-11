@@ -101,3 +101,4 @@ http://cxsmarkchan.com/articles/linux-execve.html  elf 加载相关 execute
 http://www.cnblogs.com/mingziday/p/3969274.html   linux radix tree
 
 http://www.cnblogs.com/gaozhengwei/p/7099843.html   tcp/ip 协议调用链路
+http://blog.163.com/li_hx/blog/static/183991413201322982935548/  postgre 谓词
