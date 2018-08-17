@@ -1,4 +1,5 @@
-https://blog.csdn.net/jltxgcy/article/details/44133307  mmap
+https://blog.csdn.net/jltxgcy/article/details/44133307  mmap  
+https://blog.csdn.net/Rebirth__Man/article/details/78528311   mmap 相关  
 callgrind
 http://rango.swoole.com/archives/date/2015/06
 
