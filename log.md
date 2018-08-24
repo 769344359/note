@@ -1,3 +1,4 @@
+http://www.bubuko.com/infodetail-1281753.html    
 https://blog.csdn.net/u011279649/article/details/9320315   fork 地址空间复制  
 https://blog.csdn.net/RichardYSteven/article/details/5306965  mmap 例子分析
 https://blog.csdn.net/Rebirth__Man/article/details/78528311  malloc 相关
