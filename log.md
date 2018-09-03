@@ -1,3 +1,4 @@
+https://www.cnblogs.com/Jack47/p/unicode-utf8-character_set-encoding.html  utf-8 历史
 https://www.rfc-editor.org/rfc/pdfrfc/rfc2279.txt.pdf utf-8 的rfc文档  
 http://www.bubuko.com/infodetail-1281753.html    
 https://blog.csdn.net/u011279649/article/details/9320315   fork 地址空间复制  
