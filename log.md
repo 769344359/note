@@ -1,5 +1,6 @@
-https://blog.csdn.net/lqxandroid2012/article/details/53581076   锁相关
-https://blog.csdn.net/zhanglei4214/article/details/6837697  锁相关   
+http://www.cnblogs.com/xmphoenix/archive/2011/10/23/2221879.html elf 的strtab  
+https://blog.csdn.net/lqxandroid2012/article/details/53581076   锁相关  
+https://blog.csdn.net/zhanglei4214/article/details/6837697  锁相关     
 https://www.cnblogs.com/Jack47/p/unicode-utf8-character_set-encoding.html  utf-8 历史
 https://www.rfc-editor.org/rfc/pdfrfc/rfc2279.txt.pdf utf-8 的rfc文档  
 http://www.bubuko.com/infodetail-1281753.html    
