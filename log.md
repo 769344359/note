@@ -1,3 +1,4 @@
+http://www.vuln.cn/7128 elf got 相关  
 http://www.cnblogs.com/xmphoenix/archive/2011/10/23/2221879.html elf 的strtab  
 https://blog.csdn.net/lqxandroid2012/article/details/53581076   锁相关  
 https://blog.csdn.net/zhanglei4214/article/details/6837697  锁相关     
