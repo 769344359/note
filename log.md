@@ -1,3 +1,4 @@
+https://stackoverflow.com/questions/44795308/why-put-const-in-c c++ 基础 const xxx & 的语义  
 http://blog.jobbole.com/114273/ mysql mvcc 实现  
 http://www.vuln.cn/7128 elf got 相关  
 http://www.cnblogs.com/xmphoenix/archive/2011/10/23/2221879.html elf 的strtab  
