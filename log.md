@@ -1,3 +1,4 @@
+https://wizardforcel.gitbooks.io/lcthw/content/ex4.html  c相关  
 https://blog.csdn.net/shaochenshuo/article/details/72677324 mvcc 相关   
 https://stackoverflow.com/questions/44795308/why-put-const-in-c c++ 基础 const xxx & 的语义  
 http://blog.jobbole.com/114273/ mysql mvcc 实现  
