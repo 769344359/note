@@ -1,3 +1,4 @@
+https://wizardforcel.gitbooks.io/100-gdb-tips/use-$_-$__-variables.html     gcc 使用相关技巧　　
 https://segmentfault.com/a/1190000008836467  socket 流程   
 https://wizardforcel.gitbooks.io/lcthw/content/ex4.html  c相关  
 https://blog.csdn.net/shaochenshuo/article/details/72677324 mvcc 相关   
