@@ -1,3 +1,4 @@
+```
 (gdb) bt
 #0  0x00007f0ca38a92f0 in views::View::OnKeyEvent(ui::KeyEvent*)@plt () at /home/dinosaur/chrom/src/out/Default/./libviews.so
 #1  0x00007f0cba294f74 in ui::EventHandler::OnEvent(ui::Event*) (this=0xe911ac8e088, event=0xe911b47b890) at ../../ui/events/event_handler.cc:31
@@ -70,5 +71,5 @@
 #53 0x00007f0c9d4b9c2a in service_manager::Main(service_manager::MainParams const&) (params=...) at ../../services/service_manager/embedder/main.cc:472
 #54 0x00007f0cc3a33c43 in content::ContentMain(content::ContentMainParams const&) (params=...) at ../../content/app/content_main.cc:19
 #55 0x000000000075b165 in main(int, char const**) (argc=3, argv=0x7fff23123c28) at ../../content/shell/app/shell_main.cc:39
-```
+
 ```
