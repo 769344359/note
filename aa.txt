@@ -1,0 +1,56 @@
+package main
+
+import (
+    "fmt"
+    "net/http"
+    "os"
+"strconv"
+)
+var queue chan int
+var count int
+var fileName string
+var fd  *os.File
+func Producer (){
+
+                queue <- 1
+
+}
+
+func Consumer( ){
+for{
+        select{
+        case <-queue:
+             count ++
+             fd.WriteString(strconv.Itoa(count))
+        }
+}
+
+}
+
+func hello(w http.ResponseWriter, req *http.Request) {
+    w.Write([]byte("Hello"))
+    Producer()
+
+}
+
+type Handlers struct {
+}
+
+func (h *Handlers) ResAction(w http.ResponseWriter, req *http.Request) {
+    fmt.Println("res")
+    w.Write([]byte("res"))
+}
+
+
+func main() {
+    queue =  make(chan int, 666)
+    go Consumer()
+    fileName = "test11.txt"
+    var err error
+    fd ,err  = os.OpenFile(fileName,os.O_RDWR|os.O_CREATE, 0755)
+    if err!= nil{
+        panic(err)      
+    } 
+    http.HandleFunc("/hello", hello)
+    http.ListenAndServe(":8003", nil)
+}
