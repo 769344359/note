@@ -1,3 +1,4 @@
+https://robots.thoughtbot.com/the-magic-behind-configure-make-make-install  configure 例子  
 https://blog.csdn.net/zyloveyrf/article/details/6937797 贪婪模式 非贪婪模式  
 https://doc.rust-lang.org/rust-by-example/hello.html rust 相关文档  
 https://www.ibm.com/developerworks/cn/linux/l-flexbison.html   bison错误处理
