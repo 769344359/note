@@ -1,3 +1,4 @@
+https://stackoverflow.com/questions/3250277/how-to-use-rip-relative-addressing-in-a-64-bit-assembly-program    汇编相对地址  
 https://elasticsearch.cn/article/   es 相关文档
 swoole-src\thirdparty\boost\asm\jump_x86_64_sysv_elf_gas.S  // 协程核心函数
 
