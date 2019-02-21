@@ -17,3 +17,9 @@ In the same period of one computation is writing data to a memory segment, anoth
 - 反对称
 - 自反
 - 可传递
+
+```
+One suggestion (made by Rob Pike) for concurrent programming is don't (let computations) communicate by sharing memory, (let them) share memory by communicating (through channels).
+```
+
+channel 的一个特性是保证有序,而多个任务(线程/进程/协程)共享一个资源来通讯,需要处理锁,一个互斥锁的性质是保证同时最多只有一个任务可以访问这个资源(不保证顺序)
