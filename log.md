@@ -1,3 +1,4 @@
+https://barrgroup.com/Embedded-Systems/How-To/C-Volatile-Keyword   
 https://stackoverflow.com/questions/50589499/write-once-and-read-once-in-linux-kernel  锁相关
 https://stackoverflow.com/questions/34988277/write-once-in-linux-kernel-lists  锁相关  
 https://stackoverflow.com/questions/3250277/how-to-use-rip-relative-addressing-in-a-64-bit-assembly-program    汇编相对地址  
