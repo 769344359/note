@@ -17,8 +17,9 @@ An untyped constant has a default type which is the type to which the constant i
 
 ## Short variable declarations  和 regular variable declaration  的区别:  
 A short variable declaration uses the syntax:
-
+```
 ShortVarDecl = IdentifierList ":=" ExpressionList .
+```
 It is shorthand for a regular variable declaration with initializer expressions but no types:
 
 "var" IdentifierList = ExpressionList .
