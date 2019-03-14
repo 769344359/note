@@ -11,7 +11,8 @@ For technical details about the applicable isolation levels, see Section 14.7.2.
 
 See Also concurrency, isolation level, locking, READ COMMITTED, REPEATABLE READ, snapshot, transaction, undo log.
 ```
-一致性读
--一种读取操作，它使用快照信息基于某个时间点显示查询结果，而不管同时运行的其他事务所执行的更改。(这句机翻)  
+
+### 一致性读
+- 一种读取操作，它使用快照信息基于某个时间点显示查询结果，而不管同时运行的其他事务所执行的更改。(这句机翻)  
 如果这个查询的信息已经被其他事务修改,原来的数据会通过undo log 重新构造出来,  
 这种技术可以避免了一个事务等待另外一个事务去完成再执行的这种使用锁而导致的并发降低的情况.  
