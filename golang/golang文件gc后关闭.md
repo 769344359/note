@@ -1,4 +1,20 @@
+遇到的问题: 
+当时想要一个守护进程去跑一下发邮件给相关的人,因为怕守护进程会挂,所以在crontab 上加上了每分钟启动一次,然后在邮件进程里加了相关的文件锁.
 
+调试和部署的时候都好好的,但是执行久了就发现文件锁居然没有锁住,一天内启动了5-10个进程.
+
+然后看了一下glibc 的相关文档(虽然golang不使用glibc 但是系统调用都是差不多)
+
+[文档链接](http://man7.org/linux/man-pages/man2/fcntl.2.html)
+
+>>*  If a process closes any file descriptor referring to a file, then
+          all of the process's locks on that file are released, regardless
+          of the file descriptor(s) on which the locks were obtained.  This
+          is bad: it means that a process can lose its locks on a file such
+          as /etc/passwd or /etc/mtab when for some reason a library func‐
+          tion decides to open, read, and close the same file.
+
+`runtime.SetFinalizer` 
 
 ```
 (gdb) bt
