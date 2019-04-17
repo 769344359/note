@@ -7,7 +7,7 @@
 
 [文档链接](http://man7.org/linux/man-pages/man2/fcntl.2.html)
 
->>*  If a process closes any file descriptor referring to a file, then
+>If a process **closes** any file descriptor referring to a file, then
           all of the process's locks on that file are released, regardless
           of the file descriptor(s) on which the locks were obtained.  This
           is bad: it means that a process can lose its locks on a file such
