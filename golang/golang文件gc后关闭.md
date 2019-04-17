@@ -14,6 +14,12 @@
           as /etc/passwd or /etc/mtab when for some reason a library func‐
           tion decides to open, read, and close the same file.
 
+如果关闭了关联那个锁的文件的描述符,锁就会释放
+
+-----------
+当时想了很久锁失效了只有一个可能,文件被我关闭了.
+----
+
 `runtime.SetFinalizer` 
 
 ```
