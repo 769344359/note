@@ -1,3 +1,4 @@
+https://blog.csdn.net/u011418530/article/details/79875707    tcp相关   
 https://barrgroup.com/Embedded-Systems/How-To/C-Volatile-Keyword   
 https://stackoverflow.com/questions/50589499/write-once-and-read-once-in-linux-kernel  锁相关
 https://stackoverflow.com/questions/34988277/write-once-in-linux-kernel-lists  锁相关  
