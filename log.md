@@ -1,3 +1,4 @@
+https://www.jianshu.com/p/2fd56627a3cf     分布式追踪系统  
 https://blog.csdn.net/u011418530/article/details/79875707    tcp相关   
 https://barrgroup.com/Embedded-Systems/How-To/C-Volatile-Keyword   
 https://stackoverflow.com/questions/50589499/write-once-and-read-once-in-linux-kernel  锁相关
