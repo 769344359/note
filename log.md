@@ -1,3 +1,4 @@
+https://www.cnblogs.com/sunxucool/p/3449068.html    tcp 状态转换   
 http://www.redis.cn/topics/cluster-tutorial.html  redis 集群  
 https://stackoverflow.com/questions/2600783/how-does-the-vim-write-with-sudo-trick-work    保存没有sudo的vim文件   
 git 的使用其实还不熟悉   https://git-scm.com/docs/git-reset 有空周末抽空看看git 的文档   
