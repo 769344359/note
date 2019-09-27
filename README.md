@@ -18,5 +18,7 @@
 - 15 git
 - 16 vim
 - 17 java 的jsr
+- 18 etl 相关书籍
+- 19 mysql explain
 
 
