@@ -20,5 +20,10 @@
 - 17 java 的jsr
 - 18 etl 相关书籍
 - 19 mysql explain
+- 20 java log 组件
+- 21 proc 子系统
+- 22 高可用是什么
+- 23 常用shell
+https://blog.csdn.net/arganzheng/article/details/6260720
 
 
