@@ -25,5 +25,9 @@
 - 22 高可用是什么
 - 23 常用shell
 https://blog.csdn.net/arganzheng/article/details/6260720
+- 24 e.printStackTrace 带参数和不带参数的区别
+- 25 java 启动带 -D 是什么
+- 26 junit 使用
+- 27 kong的使用
 
 
