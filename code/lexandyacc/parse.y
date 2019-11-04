@@ -9,8 +9,8 @@
 
 
 /* BISON Declarations */
-%token <ast_node> NUM
-%type <ast_node> exp
+%token <node_p> NUM
+%type <node_p> exp
 %left '-' '+'
 %left '*' '/'
 %left NEG     /* negation--unary minus */

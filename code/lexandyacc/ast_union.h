@@ -6,7 +6,7 @@ typedef struct ast_node
      int ast_type;
      float val;
      int son_length;
-     ast_node * son[0];
+     struct ast_node * son[0];
 } ast_node;
 
 typedef union ast_union
