@@ -1,6 +1,6 @@
 #include "ast_union.h"
 #include <stdlib.h>
-
+#include <stdarg.h>
 //
 // 创建ast 节点
 ast_node * create_ast(int ast_type, int son_num ,...){
@@ -9,12 +9,13 @@ ast_node * create_ast(int ast_type, int son_num ,...){
     node->son_length = son_num;
     node->ast_type = ast_type;
     node->son_length = son_num;
-    node->val = NULL;
-    
+    node->val = 0;
+   
+    va_list valist; 
     va_start(valist, son_num);
  
     /* 访问所有赋给 valist 的参数 */
-    for (i = 0; i < son_num; i++)
+    for (int i = 0; i < son_num; i++)
     {
        ast_node * temp_node = va_arg(valist, ast_node *);
        node->son[i] = temp_node;

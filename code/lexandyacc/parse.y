@@ -58,7 +58,7 @@ yylex ()
       ungetc (c, stdin);
       float fnum = 0;
       scanf ("%lf", &fnum);
-      yylval = create_leaf_node(NODE_VAL,fnum);
+      yylval.node_p = create_leaf_node(NODE_VAL,fnum);
       return NUM;
     }
   /* return end-of-file  */
