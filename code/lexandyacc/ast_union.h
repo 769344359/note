@@ -1,11 +1,5 @@
 #ifndef __AST_UNION__
 #define __AST_UNION__
-typedef union ast_union
-{
-    ast_node * node_p;
-    char *  ast_string;
-    double * number;
-} ast_union;
 
 typedef struct ast_node
 {
@@ -14,6 +8,15 @@ typedef struct ast_node
      int son_length;
      ast_node * son[0];
 } ast_node;
+
+typedef union ast_union
+{
+    ast_node * node_p;
+    char *  ast_string;
+    double * number;
+} ast_union;
+
+
 
 
 #define NODE_VAL 1
