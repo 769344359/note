@@ -1,3 +1,4 @@
+https://blog.csdn.net/u013309870/article/details/72975536  jvm init 和clinit     
 https://www.cnblogs.com/vipstone/p/9636678.html  spring boot 集成mybastis 
 https://www.cnblogs.com/peterxiao/p/7779188.html   java 的集成mybastis  
 https://howtodoinjava.com/spring-boot2/read-file-from-resources/  java spring boot 相关教程   
