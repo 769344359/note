@@ -1,3 +1,4 @@
+https://howtodoinjava.com/spring-boot2/read-file-from-resources/  java spring boot 相关教程   
 https://www.cnblogs.com/jinzy/p/6496103.html   
 https://xnerv.wang/logical-address-linear-address-physical-address-and-virtual-address/   大佬的blog  
 https://phpstorm.tips/tips/35-jumping-to-errors/  快捷方式跳转到错误  
