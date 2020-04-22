@@ -1,0 +1,46 @@
+```
+<?php
+$data = [];
+                $data['list'] = [];
+for($i = 0 ;  $i < 100000; $i++){
+                $data[] =[$i =>$i ];
+
+}
+$data = json_encode($data);
+$fd = fopen("test.txt", "w+");
+fwrite($fd , $data);
+```
+
+
+
+```
+<?php
+  
+ini_set('memory_limit', -1);
+
+function m()
+{
+            echo round(memory_get_usage() / 1024 / 1024, 2) . "\n";
+}
+
+function test(){
+        echo "----";
+        m();
+$content = file_get_contents('./test.txt');
+m();
+
+$data = json_decode($content);
+//m();
+unset($content, $data);
+m();
+gc_mem_caches();
+m();
+gc_collect_cycles();
+m();}
+
+
+test();
+test();
+test();
+
+```
