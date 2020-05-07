@@ -1,0 +1,102 @@
+```
+Hardware watchpoint 1: *(uint32_t *) 0x7fffee750ba0
+
+Old value = 1
+New value = 2
+0x000000000093efcd in zend_gc_addref (p=0x7fffee750ba0) at /home/dinosaur/test/php746/php-src/Zend/zend_types.h:1035
+1035		return ++(p->refcount);
+(gdb) bt
+#0  0x000000000093efcd in zend_gc_addref (p=0x7fffee750ba0) at /home/dinosaur/test/php746/php-src/Zend/zend_types.h:1035
+#1  0x000000000093f0bf in zval_addref_p (pz=0x7fffef21b440) at /home/dinosaur/test/php746/php-src/Zend/zend_types.h:1070
+#2  0x0000000000945f02 in zend_array_dup_element (source=0x7fffef259ba0, target=0x7fffedcfd6c0, idx=1, p=0x7fffef2726a0, q=0x7fffedcaf4a0, packed=0, static_keys=1, with_holes=0)
+    at /home/dinosaur/test/php746/php-src/Zend/zend_hash.c:1973
+#3  0x000000000094610d in zend_array_dup_elements (source=0x7fffef259ba0, target=0x7fffedcfd6c0, static_keys=1, with_holes=0) at /home/dinosaur/test/php746/php-src/Zend/zend_hash.c:2020
+#4  0x00000000009468b0 in zend_array_dup (source=0x7fffef259ba0) at /home/dinosaur/test/php746/php-src/Zend/zend_hash.c:2105
+#5  0x000000000092b9a1 in zend_error_va_list (type=8, error_filename=0x7fffedcfb3d8 "/home/dinosaur/test/php746/php74-memory-leak/vendor/fzaninotto/faker/src/Faker/Provider/Text.php", error_lineno=80, 
+    format=0x11987d7 "Undefined variable: %s", args=0x7fffffff97e0) at /home/dinosaur/test/php746/php-src/Zend/zend.c:1344
+#6  0x000000000092c2bc in zend_error (type=8, format=0x11987d7 "Undefined variable: %s") at /home/dinosaur/test/php746/php-src/Zend/zend.c:1481
+#7  0x0000000000991354 in zval_undefined_cv (var=112) at /home/dinosaur/test/php746/php-src/Zend/zend_execute.c:275
+#8  0x000000000099149f in _get_zval_ptr_cv_BP_VAR_R (var=112) at /home/dinosaur/test/php746/php-src/Zend/zend_execute.c:348
+#9  0x00000000009fd4b9 in ZEND_ASSIGN_DIM_SPEC_CV_UNUSED_OP_DATA_CV_HANDLER () at /home/dinosaur/test/php746/php-src/Zend/zend_vm_execute.h:46207
+#10 0x0000000000a09708 in execute_ex (ex=0x7fffef21b0b0) at /home/dinosaur/test/php746/php-src/Zend/zend_vm_execute.h:57578
+#11 0x0000000000913886 in zend_call_function (fci=0x7fffffff9ce0, fci_cache=0x7fffffff9cc0) at /home/dinosaur/test/php746/php-src/Zend/zend_execute_API.c:812
+#12 0x000000000073ed60 in zif_call_user_func_array (execute_data=0x7fffef21b040, return_value=0x7fffef21b030) at /home/dinosaur/test/php746/php-src/ext/standard/basic_functions.c:4960
+#13 0x00000000009a05f5 in ZEND_DO_FCALL_BY_NAME_SPEC_RETVAL_USED_HANDLER () at /home/dinosaur/test/php746/php-src/Zend/zend_vm_execute.h:1526
+#14 0x0000000000a05bad in execute_ex (ex=0x7fffef21ae90) at /home/dinosaur/test/php746/php-src/Zend/zend_vm_execute.h:53822
+#15 0x0000000000913886 in zend_call_function (fci=0x7fffffffa0a0, fci_cache=0x7fffffffa080) at /home/dinosaur/test/php746/php-src/Zend/zend_execute_API.c:812
+#16 0x000000000073e822 in zif_call_user_func (execute_data=0x7fffef21ae10, return_value=0x7fffef21adc0) at /home/dinosaur/test/php746/php-src/ext/standard/basic_functions.c:4934
+#17 0x00000000009a05f5 in ZEND_DO_FCALL_BY_NAME_SPEC_RETVAL_USED_HANDLER () at /home/dinosaur/test/php746/php-src/Zend/zend_vm_execute.h:1526
+#18 0x0000000000a05bad in execute_ex (ex=0x7fffef214020) at /home/dinosaur/test/php746/php-src/Zend/zend_vm_execute.h:53822
+#19 0x0000000000a09cac in zend_execute (op_array=0x7fffef27f300, return_value=0x0) at /home/dinosaur/test/php746/php-src/Zend/zend_vm_execute.h:57922
+#20 0x000000000092ce19 in zend_execute_scripts (type=8, retval=0x0, file_count=3) at /home/dinosaur/test/php746/php-src/Zend/zend.c:1666
+#21 0x000000000088e210 in php_execute_script (primary_file=0x7fffffffc8b0) at /home/dinosaur/test/php746/php-src/main/main.c:2617
+#22 0x0000000000a0c89d in do_cli (argc=2, argv=0x162cf20) at /home/dinosaur/test/php746/php-src/sapi/cli/php_cli.c:961
+#23 0x0000000000a0da6d in main (argc=2, argv=0x162cf20) at /home/dinosaur/test/php746/php-src/sapi/cli/php_cli.c:1356
+(gdb) l
+1030		return p->refcount;
+1031	}
+1032	
+1033	static zend_always_inline uint32_t zend_gc_addref(zend_refcounted_h *p) {
+1034		ZEND_RC_MOD_CHECK(p);
+1035		return ++(p->refcount);
+1036	}
+1037	
+1038	static zend_always_inline uint32_t zend_gc_delref(zend_refcounted_h *p) {
+1039		ZEND_ASSERT(p->refcount > 0);
+(gdb) c
+Continuing.
+php: /home/dinosaur/test/php746/php-src/Zend/zend_hash.c:965: _zend_hash_index_add_or_update_i: Assertion `(zend_gc_refcount(&(ht)->gc) == 1) || ((ht)->u.flags & (1<<6))' failed.
+
+Program received signal SIGABRT, Aborted.
+0x00007ffff5efd428 in __GI_raise (sig=sig@entry=6) at ../sysdeps/unix/sysv/linux/raise.c:54
+54	../sysdeps/unix/sysv/linux/raise.c: No such file or directory.
+(gdb) bt
+#0  0x00007ffff5efd428 in __GI_raise (sig=sig@entry=6) at ../sysdeps/unix/sysv/linux/raise.c:54
+#1  0x00007ffff5eff02a in __GI_abort () at abort.c:89
+#2  0x00007ffff5ef5bd7 in __assert_fail_base (fmt=<optimized out>, assertion=assertion@entry=0x118f7a8 "(zend_gc_refcount(&(ht)->gc) == 1) || ((ht)->u.flags & (1<<6))", 
+    file=file@entry=0x118f708 "/home/dinosaur/test/php746/php-src/Zend/zend_hash.c", line=line@entry=965, function=function@entry=0x118fca0 <__PRETTY_FUNCTION__.11463> "_zend_hash_index_add_or_update_i") at assert.c:92
+#3  0x00007ffff5ef5c82 in __GI___assert_fail (assertion=0x118f7a8 "(zend_gc_refcount(&(ht)->gc) == 1) || ((ht)->u.flags & (1<<6))", file=0x118f708 "/home/dinosaur/test/php746/php-src/Zend/zend_hash.c", line=965, 
+    function=0x118fca0 <__PRETTY_FUNCTION__.11463> "_zend_hash_index_add_or_update_i") at assert.c:101
+#4  0x00000000009426eb in _zend_hash_index_add_or_update_i (ht=0x7fffee750ba0, h=0, pData=0x1626a20 <executor_globals>, flag=18) at /home/dinosaur/test/php746/php-src/Zend/zend_hash.c:965
+#5  0x0000000000942c89 in zend_hash_next_index_insert (ht=0x7fffee750ba0, pData=0x1626a20 <executor_globals>) at /home/dinosaur/test/php746/php-src/Zend/zend_hash.c:1078
+#6  0x00000000009fd4fb in ZEND_ASSIGN_DIM_SPEC_CV_UNUSED_OP_DATA_CV_HANDLER () at /home/dinosaur/test/php746/php-src/Zend/zend_vm_execute.h:46211
+#7  0x0000000000a09708 in execute_ex (ex=0x7fffef21b0b0) at /home/dinosaur/test/php746/php-src/Zend/zend_vm_execute.h:57578
+#8  0x0000000000913886 in zend_call_function (fci=0x7fffffff9ce0, fci_cache=0x7fffffff9cc0) at /home/dinosaur/test/php746/php-src/Zend/zend_execute_API.c:812
+#9  0x000000000073ed60 in zif_call_user_func_array (execute_data=0x7fffef21b040, return_value=0x7fffef21b030) at /home/dinosaur/test/php746/php-src/ext/standard/basic_functions.c:4960
+#10 0x00000000009a05f5 in ZEND_DO_FCALL_BY_NAME_SPEC_RETVAL_USED_HANDLER () at /home/dinosaur/test/php746/php-src/Zend/zend_vm_execute.h:1526
+#11 0x0000000000a05bad in execute_ex (ex=0x7fffef21ae90) at /home/dinosaur/test/php746/php-src/Zend/zend_vm_execute.h:53822
+#12 0x0000000000913886 in zend_call_function (fci=0x7fffffffa0a0, fci_cache=0x7fffffffa080) at /home/dinosaur/test/php746/php-src/Zend/zend_execute_API.c:812
+#13 0x000000000073e822 in zif_call_user_func (execute_data=0x7fffef21ae10, return_value=0x7fffef21adc0) at /home/dinosaur/test/php746/php-src/ext/standard/basic_functions.c:4934
+#14 0x00000000009a05f5 in ZEND_DO_FCALL_BY_NAME_SPEC_RETVAL_USED_HANDLER () at /home/dinosaur/test/php746/php-src/Zend/zend_vm_execute.h:1526
+#15 0x0000000000a05bad in execute_ex (ex=0x7fffef214020) at /home/dinosaur/test/php746/php-src/Zend/zend_vm_execute.h:53822
+#16 0x0000000000a09cac in zend_execute (op_array=0x7fffef27f300, return_value=0x0) at /home/dinosaur/test/php746/php-src/Zend/zend_vm_execute.h:57922
+#17 0x000000000092ce19 in zend_execute_scripts (type=8, retval=0x0, file_count=3) at /home/dinosaur/test/php746/php-src/Zend/zend.c:1666
+#18 0x000000000088e210 in php_execute_script (primary_file=0x7fffffffc8b0) at /home/dinosaur/test/php746/php-src/main/main.c:2617
+#19 0x0000000000a0c89d in do_cli (argc=2, argv=0x162cf20) at /home/dinosaur/test/php746/php-src/sapi/cli/php_cli.c:961
+#20 0x0000000000a0da6d in main (argc=2, argv=0x162cf20) at /home/dinosaur/test/php746/php-src/sapi/cli/php_cli.c:1356
+(gdb) up
+#1  0x00007ffff5eff02a in __GI_abort () at abort.c:89
+89	abort.c: No such file or directory.
+(gdb) up
+#2  0x00007ffff5ef5bd7 in __assert_fail_base (fmt=<optimized out>, assertion=assertion@entry=0x118f7a8 "(zend_gc_refcount(&(ht)->gc) == 1) || ((ht)->u.flags & (1<<6))", 
+    file=file@entry=0x118f708 "/home/dinosaur/test/php746/php-src/Zend/zend_hash.c", line=line@entry=965, function=function@entry=0x118fca0 <__PRETTY_FUNCTION__.11463> "_zend_hash_index_add_or_update_i") at assert.c:92
+92	assert.c: No such file or directory.
+(gdb) up
+#3  0x00007ffff5ef5c82 in __GI___assert_fail (assertion=0x118f7a8 "(zend_gc_refcount(&(ht)->gc) == 1) || ((ht)->u.flags & (1<<6))", file=0x118f708 "/home/dinosaur/test/php746/php-src/Zend/zend_hash.c", line=965, 
+    function=0x118fca0 <__PRETTY_FUNCTION__.11463> "_zend_hash_index_add_or_update_i") at assert.c:101
+101	in assert.c
+(gdb) up
+#4  0x00000000009426eb in _zend_hash_index_add_or_update_i (ht=0x7fffee750ba0, h=0, pData=0x1626a20 <executor_globals>, flag=18) at /home/dinosaur/test/php746/php-src/Zend/zend_hash.c:965
+965		HT_ASSERT_RC1(ht);
+(gdb) l
+960		uint32_t nIndex;
+961		uint32_t idx;
+962		Bucket *p;
+963	
+964		IS_CONSISTENT(ht);
+965		HT_ASSERT_RC1(ht);
+966	
+967		if (HT_FLAGS(ht) & HASH_FLAG_PACKED) {
+968			if (h < ht->nNumUsed) {
+969				p = ht->arData + h;
+```
