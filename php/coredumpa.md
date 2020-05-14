@@ -67,3 +67,9 @@ Continuing.
 #12 0x0000555555c6e232 in main (argc=2, argv=0x55555697d570) at /root/php-src/sapi/cli/php_cli.c:1356
 
 ```
+
+
+```
+(gdb) p object_ptr->value->arr->gc
+$5 = {refcount = 1, u = {type_info = 23}}
+```
