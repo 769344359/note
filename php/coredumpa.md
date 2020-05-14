@@ -47,3 +47,23 @@ zend_gc_set_refcount (p=0x7fffee6593c0, rc=1) at /root/php-src/Zend/zend_types.h
 (gdb) c
 Continuing.
 ```
+```
+(gdb) bt
+#0  __GI_raise (sig=sig@entry=6) at ../sysdeps/unix/sysv/linux/raise.c:51
+#1  0x00007ffff5d45801 in __GI_abort () at abort.c:79
+#2  0x00007ffff5d3539a in __assert_fail_base (fmt=0x7ffff5ebc7d8 "%s%s%s:%u: %s%sAssertion `%s' failed.\n%n", 
+    assertion=assertion@entry=0x5555563ed9f0 "(zend_gc_refcount(&(ht)->gc) == 1) || ((ht)->u.flags & (1<<6))", file=file@entry=0x5555563ed960 "/root/php-src/Zend/zend_hash.c", 
+    line=line@entry=965, function=function@entry=0x5555563edee0 <__PRETTY_FUNCTION__.13579> "_zend_hash_index_add_or_update_i") at assert.c:92
+#3  0x00007ffff5d35412 in __GI___assert_fail (assertion=0x5555563ed9f0 "(zend_gc_refcount(&(ht)->gc) == 1) || ((ht)->u.flags & (1<<6))", file=0x5555563ed960 "/root/php-src/Zend/zend_hash.c", 
+    line=965, function=0x5555563edee0 <__PRETTY_FUNCTION__.13579> "_zend_hash_index_add_or_update_i") at assert.c:101
+#4  0x0000555555ba2bdb in _zend_hash_index_add_or_update_i (ht=0x7fffee6593c0, h=0, pData=0x555556978ac0 <executor_globals>, flag=18) at /root/php-src/Zend/zend_hash.c:965
+#5  0x0000555555ba3170 in zend_hash_next_index_insert (ht=0x7fffee6593c0, pData=0x555556978ac0 <executor_globals>) at /root/php-src/Zend/zend_hash.c:1078
+#6  0x0000555555c5dcba in ZEND_ASSIGN_DIM_SPEC_CV_UNUSED_OP_DATA_CV_HANDLER () at /root/php-src/Zend/zend_vm_execute.h:46211
+#7  0x0000555555c69ebf in execute_ex (ex=0x7fffee614020) at /root/php-src/Zend/zend_vm_execute.h:57578
+#8  0x0000555555c6a466 in zend_execute (op_array=0x7fffee682400, return_value=0x0) at /root/php-src/Zend/zend_vm_execute.h:57922
+#9  0x0000555555b8d2b4 in zend_execute_scripts (type=8, retval=0x0, file_count=3) at /root/php-src/Zend/zend.c:1666
+#10 0x0000555555aee5b4 in php_execute_script (primary_file=0x7fffffffd0e0) at /root/php-src/main/main.c:2617
+#11 0x0000555555c6d070 in do_cli (argc=2, argv=0x55555697d570) at /root/php-src/sapi/cli/php_cli.c:961
+#12 0x0000555555c6e232 in main (argc=2, argv=0x55555697d570) at /root/php-src/sapi/cli/php_cli.c:1356
+
+```
